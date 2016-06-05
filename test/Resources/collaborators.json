@@ -1,0 +1,89 @@
+{
+  "consumer": {
+    "name": "collaborator client"
+  },
+  "provider": {
+    "name": "collaborator api"
+  },
+  "interactions": [
+    {
+      "provider_state": "there is a collaborator with id 23",
+      "description": "get collaborator",
+      "request": {
+        "headers": {
+          "Accept": "application/json"
+        },
+        "method": "GET",
+        "path": "/collaborators/23"
+      },
+      "response": {
+        "body": {
+          "name": "John",
+          "role": "Client Relantionship"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    },
+    {
+      "provider_state": "there is a role called developer and no developers named daniele",
+      "description": "post new developer",
+      "request": {
+        "headers": {
+          "Accept": "application/json"
+        },
+        "method": "POST",
+        "path": "/collaborators"
+      },
+      "response": {
+        "body": {
+          "username": "daniele",
+          "role": "developer"
+        },
+        "headers": {
+          "Content-Type": "applicationson"
+        },
+        "status": 200
+      }
+    },
+    {
+      "provider_state": "there is not any collaborator with identifier 111",
+      "description": "get no collaborator",
+      "request": {
+        "headers": {
+          "Accept": "application/json"
+        },
+        "method": "GET",
+        "path": "/collaborators/111"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 404
+      }
+    },
+    {
+      "provider_state": "there is a collaborator with identifier 111",
+      "description": "delete collaborat",
+      "request": {
+        "headers": {
+          "Accept": "application/json"
+        },
+        "method": "DELETE",
+        "path": "/collaborators/111"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metaData": {
+    "pactSpecificationVersion": "1.1.0"
+  }
+}
