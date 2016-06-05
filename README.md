@@ -10,9 +10,7 @@ How to use:
 
 Run The Integration Test
 
-*  ./bin/vendor/phpunit ù
-
-
+*  ./bin/vendor/phpunit
 
 You should see a list of errors.
 Try to fix them :D
