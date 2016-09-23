@@ -35,7 +35,6 @@ class GetCollaboratorTest extends WebTestCase implements PactoIntegrationTestInt
                 return $psr7Factory->createResponse($r);
             },
             function($state) {
-
                switch($state) {
                    case 'there is a collaborator with id 23':
                        $this->loadCollaborator(['name' => 'John', 'role' => 'any role', 'identifier' => 23]);
@@ -71,9 +70,7 @@ class GetCollaboratorTest extends WebTestCase implements PactoIntegrationTestInt
      */
     public function createApplication()
     {
-        $app = require __DIR__.'/../../src/Application/app.php';
-
-        return $app;
+        return require __DIR__.'/../../src/Application/app.php';
     }
 
     public function createPactoInstance()

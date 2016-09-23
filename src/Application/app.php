@@ -48,7 +48,7 @@ $app->get('/collaborators/{id}', function($id) use($app) {
 
 $app->post('/collaborators', function(Request $request) use($app) {
     //create it really
-    return $app->json(['name' => 'a name', 'role' => 'any role'], 201);
+    return $app->json(['name' => 'a name', 'username' => 'a username', 'role' => 'any role'], 200);
 });
 
 $app->delete('/collaborators/{identifier}', function($identifier) use($app) {

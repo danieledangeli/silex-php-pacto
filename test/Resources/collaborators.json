@@ -43,7 +43,7 @@
           "role": "developer"
         },
         "headers": {
-          "Content-Type": "applicationson"
+          "Content-Type": "application/json"
         },
         "status": 200
       }
