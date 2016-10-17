@@ -1,5 +1,17 @@
 {
     "name": "danieledangeli/silex-example-app",
+    "authors": [
+        {
+            "name": "danieledangeli",
+            "email": "dangeli88.daniele@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/danieledangeli/pacto-php"
+        }
+    ],
     "require": {
         "silex/silex": "^2.0",
         "phpunit/phpunit": "^5.3",
@@ -8,18 +20,6 @@
         "symfony/psr-http-message-bridge": "^0.2.0",
         "doctrine/dbal": "~2.2"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "https://github.com/danieledangeli/pacto-php"
-        }
-    ],
-    "authors": [
-        {
-            "name": "danieledangeli",
-            "email": "dangeli88.daniele@gmail.com"
-        }
-    ],
     "require-dev": {
         "symfony/browser-kit": "^3.0",
         "symfony/css-selector": "^3.0"
